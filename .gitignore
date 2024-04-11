@@ -1,4 +1,3 @@
 # files to ignore when pushing to github
 node_modules/
 .env
-examples/**/dist/*
