@@ -1,0 +1,48 @@
+/* FONT FAMILY */
+
+/* LAYER */
+@layer base {
+    /* RESETTING */
+    *,
+    *::after,
+    *::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    button,
+    summary {
+        cursor: pointer;
+    }
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+    /* colors */
+    --white: white;
+    --black: black;
+
+    --on-off: sienna;
+
+    --color1: #fff;
+    --color2: #181818;
+}
+
+@media screen and (width > 1rem) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media screen and (width > 31rem) {
+    body {
+        background-color: greenyellow;
+    }
+}
+
+@media screen and (width > 49rem) {
+    body {
+        background-color: green;
+    }
+}
