@@ -1,13 +1,14 @@
 {
   "name": "api-2324",
   "version": "1.0.0",
-  "description": "",
+  "description": "In dit vier weken durende vak zullen we de kracht van het web ervaren en kijken hoe we (mobiele) web apps kunnen maken die\nnet zo aantrekkelijk zijn als native mobiele apps.",
   "scripts": {
     "dev": "nodemon index.js",
     "lint": "eslint . --ext .js,.liquid"
   },
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.6.8",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "eslint": "^8.57.0",

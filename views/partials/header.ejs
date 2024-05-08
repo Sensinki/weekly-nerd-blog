@@ -1,11 +1,23 @@
 <header>
     <nav>
-        <section class="nav-bar">
-            <a href='#' class="logo"></a>
-            <form>
-                <input type="search" placeholder="Search" aria-label="Search">
-                <button type="submit">Search</button>
-            </form>
+        <section>
+            <a href='/' class="logo">WeeklyNerd</a>
+            <input type='checkbox' id='check' />
+            <ul class="menu">
+
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+
+                <!-- <li class="search">
+                    <form action="" method="get" id="searchBox">
+                        <i class="fa fa-search" id="searchIcon" aria-hidden="true"></i>
+                        <input type="search" name="q" id="result" placeholder="Search" aria-label="Search">
+                        <i class="fa fa-microphone" id="microphoneButton"></i>
+                    </form>
+                </li> -->
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </ul>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </section>
     </nav>
 </header>
