@@ -51,6 +51,11 @@ app.get("/rosa", async (req, res) => {
     res.render("pages/rosa", { title: "rosa" });
 });
 
+app.get("/goals", async (req, res) => {
+    res.render("pages/goals", { title: "goals" });
+});
+
+
 // app.get("/blog/:id/", async (req, res) => {
 
 // });

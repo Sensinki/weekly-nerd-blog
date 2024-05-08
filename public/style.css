@@ -52,7 +52,7 @@
         align-items: center;
         gap: 2rem;
 
-        margin: 5rem;
+        margin: 3rem;
         margin-top: 6em;
     }
 
@@ -76,6 +76,36 @@
 
     li {
         list-style: none;
+    }
+
+    code {
+        font-family: monospace;
+        background: var(--change-black);
+        color: var(--white);
+
+        word-wrap: break-word;
+        box-decoration-break: clone;
+        padding: 0.1rem 0.3rem 0.2rem;
+        border-radius: 0.2rem;
+    }
+
+    pre code {
+        display: block;
+        background: none;
+        white-space: pre;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+        max-width: 100%;
+        min-width: 100px;
+        padding: 0;
+
+        background: var(--change-black);
+        color: var(--white);
+
+        word-wrap: break-word;
+        box-decoration-break: clone;
+        padding: 0.1rem 0.3rem 0.2rem;
+        border-radius: 0.5rem;
     }
 
     /* NAVBAR */
@@ -224,7 +254,7 @@
 
     /* COMPONENT STYLING */
 
-    main ul {
+    #blogs ul {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -232,20 +262,24 @@
         gap: 2rem;
     }
 
-    main ul li {
+    #blogs ul li {
         padding: 1rem;
         background-color: var(--blue);
         display: grid;
         border-radius: 1rem;
     }
 
-    main ul li h3 {
+    #blogs ul li h3 {
         grid-area: 2/1;
     }
 
-    main ul:has(img) li img {
+    #blogs ul:has(img) li img {
         grid-area: 1/1;
         width: 15rem;
+    }
+
+    #blog li {
+        list-style: inside;
     }
 
     /* SEARCH */
@@ -266,6 +300,7 @@
 
 @media screen and (width > 31rem) {
     main {
+        margin: 5rem;
         margin-top: 8em;
     }
 }

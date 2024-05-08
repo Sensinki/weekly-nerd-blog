@@ -17,7 +17,88 @@
 
             <section id="blog">
 
-                
+                <div class="blogHead">
+                    <img src="/assets/images/kilian.png" alt="kilian">
+                    <h2>Polypane</h2>
+                    <br>
+                    <h3 class="bold">Speaker: Kilian Valkhof</h3>
+                </div>
+                <br>
+
+                <p>Kilian’s most prominent subject was how we need less and less Javascript and more HTML and CSS, which
+                    he calls “the rule
+                    of least power”. This means that you need to use the programming language with the least power, but
+                    enough to get the
+                    job done for your goal.
+                </p>
+                <br>
+                <p>So for a normal webpage you’d first use HTML, then CSS and JS as last resort. CSS is faster for the
+                    user and easier on
+                    your browser, so you should try to use it before JS as much as possible.
+                </p>
+                <br>
+                <p>
+                    If you're planning to build something in the coming years that you've built before and want to
+                    reuse, first check if
+                    there's a better way to build it than what you had before. Browser functions are advancing very
+                    quickly, and there might
+                    be a potential browser solution ready that you previously built with JavaScript.
+                </p>
+                <br>
+                <p class="bold">
+                    Below are notes of things that I learned from him:
+                </p>
+                <br>
+                <q>“Once you learn something, you don’t learn it again.”</q>
+                <br>
+                <p>
+                    Back then you’d be making smooth transitions by using jQuery. Using Javascript for transitions is
+                    too strict, so it is
+                    much better and functional to use HTML for transition.
+                </p>
+
+                <pre>
+    <code>
+        html {
+            scroll-behavior: smooth;
+        }
+    </code>
+</pre>
+
+                <p>
+                    Smooth scroll is fun, but it isn’t for everyone. We need to make our websites as accessible as
+                    possible. We can set a
+                    preference option with @media query:
+                </p>
+
+                <pre>
+    <code>
+        @media(prefers-reduced-motion: no-preference) {
+            html {
+                scroll-behavior: smooth;
+            }
+        }
+
+    </code>
+</pre>
+
+                <p>
+                    Container queries are like media queries but it takes into account how wide the container is instead
+                    of the viewport.
+                    Basically you don’t need to add extra media queries and you can decide how the children are going to
+                    behave. You can do
+                    this with <code>container-type</code> and <code>@container (min-width:)</code>.
+
+                </p>
+                <br>
+                <p>
+                    I thought Kilian was going to talk about his experiences at first, but he ended up giving us a lot
+                    of
+                    useful tips for
+                    HTML and CSS. I got a lot of useful insights about the working field while listening to him. The
+                    only issue I had was
+                    the fact that he was speaking too quickly, which made it difficult for me to understand him.
+                </p>
 
             </section>
 
