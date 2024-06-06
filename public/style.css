@@ -42,8 +42,13 @@
 @media screen and (width > 1rem) {
     /* GENERAL STYLING */
     body {
-        background: var(--light-blue);
-        background: radial-gradient(circle, var(--light-blueish) 0%, var(--blueish) 50%, var(--light-blue) 100%);
+        background-color: #efe6f7;
+        background-image: radial-gradient(#8745f7 0.9500000000000001px, transparent 0.9500000000000001px),
+            radial-gradient(#8745f7 0.9500000000000001px, #efe6f7 0.9500000000000001px);
+        background-size: 40px 40px;
+        background-position:
+            0 0,
+            20px 20px;
     }
 
     main {
@@ -54,6 +59,10 @@
 
         margin: 3rem;
         margin-top: 6em;
+    }
+
+    body:has(.errorstatus) {
+        height: 100%;
     }
 
     /* hidden h1 */
@@ -111,8 +120,8 @@
     /* NAVBAR */
     header {
         padding: 1em;
-        background-color: var(--blue);
-        background: linear-gradient(180deg, var(--dark-blue), var(--blue) 100%);
+        background-color: #714d9c;
+        background: linear-gradient(180deg, #714d9c, #9964f5 100%);
         position: fixed;
         top: 0cm;
         width: 100vw;
@@ -127,8 +136,9 @@
     }
 
     .logo {
-        color: var(--light-blueish);
+        color: var(--white);
         font-size: 1.5em;
+        font-weight: 900;
     }
 
     nav ul {
@@ -264,9 +274,19 @@
 
     #blogs ul li {
         padding: 1rem;
-        background-color: var(--blue);
+        background-color: #b192d8;
         display: grid;
         border-radius: 1rem;
+        gap: 1rem;
+        box-shadow:
+            rgba(0, 0, 0, 0.4) 0px 2.5px 5px,
+            rgba(0, 0, 0, 0.3) 0px 7.5px 12.5px -2.5px,
+            rgba(0, 0, 0, 0.2) 0px -2.5px 0px inset;
+    }
+
+    #blogs ul li:hover {
+        background-color: #a67cd9;
+        transition: 0.4s;
     }
 
     #blogs ul li h3 {
@@ -276,16 +296,36 @@
     #blogs ul:has(img) li img {
         grid-area: 1/1;
         width: 15rem;
+        height: 15rem;
+        border-radius: 0.5rem;
+        box-shadow:
+            rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     }
 
     #blog li {
         list-style: inside;
     }
 
+    #blogList li {
+        cursor: pointer;
+    }
     /* SEARCH */
 
     /* BLOGS */
+    .blogHead img {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 1rem;
+        box-shadow:
+            rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px,
+            rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px,
+            rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
 
+    /* FOOTER */
     footer {
         display: flex;
         justify-content: center;
@@ -293,7 +333,8 @@
         position: relative;
         width: 100vw;
         height: 10vh;
-        background-color: var(--blue);
+        background-color: #714d9c;
+        background: linear-gradient(180deg, #efe6f75b, #9964f573, #714d9c6e 100%);
         margin-top: 3rem;
     }
 }

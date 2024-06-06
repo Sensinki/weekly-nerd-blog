@@ -24,6 +24,11 @@ app.get("/", async (req, res) => {
     res.render("pages/index", { title: "TEST" });
 });
 
+app.get("/about", async (req, res) => {
+    res.render("pages/about", { title: "about" });
+});
+
+
 // BLOGS
 app.get("/kilian", async (req, res) => {
     res.render("pages/kilian", { title: "kilian" });

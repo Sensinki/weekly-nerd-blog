@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <%- include('../partials/head.ejs') %>
-</head>
-
-<body>
+<%- include('../partials/head.ejs') %>
 
     <%- include('../partials/header.ejs') %>
 
@@ -20,10 +13,10 @@
                 <div class="blogHead">
                     <img src="/assets/images/kilian.png" alt="kilian">
                     <h2>Polypane</h2>
-                    <br>
+                    
                     <h3 class="bold">Speaker: Kilian Valkhof</h3>
                 </div>
-                <br>
+                
 
                 <p>Kilian’s most prominent subject was how we need less and less Javascript and more HTML and CSS, which
                     he calls “the rule
@@ -31,12 +24,12 @@
                     enough to get the
                     job done for your goal.
                 </p>
-                <br>
+                
                 <p>So for a normal webpage you’d first use HTML, then CSS and JS as last resort. CSS is faster for the
                     user and easier on
                     your browser, so you should try to use it before JS as much as possible.
                 </p>
-                <br>
+                
                 <p>
                     If you're planning to build something in the coming years that you've built before and want to
                     reuse, first check if
@@ -44,13 +37,13 @@
                     quickly, and there might
                     be a potential browser solution ready that you previously built with JavaScript.
                 </p>
-                <br>
+                
                 <p class="bold">
                     Below are notes of things that I learned from him:
                 </p>
-                <br>
+                
                 <q>“Once you learn something, you don’t learn it again.”</q>
-                <br>
+                
                 <p>
                     Back then you’d be making smooth transitions by using jQuery. Using Javascript for transitions is
                     too strict, so it is
@@ -90,7 +83,7 @@
                     this with <code>container-type</code> and <code>@container (min-width:)</code>.
 
                 </p>
-                <br>
+                
                 <p>
                     I thought Kilian was going to talk about his experiences at first, but he ended up giving us a lot
                     of
@@ -103,11 +96,4 @@
             </section>
 
         </main>
-        <footer>
-            <%- include('../partials/footer.ejs') %>
-        </footer>
-        <script src="/script.js"></script>
-
-</body>
-
-</html>
+        <%- include ('../partials/footer.ejs') %>

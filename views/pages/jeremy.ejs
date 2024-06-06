@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../partials/head.ejs') %>
 
-<head>
-    <%- include('../partials/head.ejs') %>
-</head>
-
-<body>
 
     <%- include('../partials/header.ejs') %>
 
@@ -20,10 +14,10 @@
                 <div class="blogHead">
                     <img src="/assets/images/jeremy.png" alt="jeremy">
                     <h2>Declarative Design</h2>
-                    <br>
+                    
                     <h3 class="bold">Speaker: Jeremy Keith</h3>
                 </div>
-                <br>
+                
 
                 <p>
                     Jeremy compares classical music and jazz music to explain the differences between imperative and
@@ -32,7 +26,7 @@
                     programming language to
                     create various things.
                 </p>
-                <br>
+                
                 <p>
                     Methods of music compositions are like coding:
                 </p>
@@ -47,40 +41,34 @@
                     </li>
                 </ul>
 
-                <br>
+                
                 <p>
                     HTML and CSS are declarative languages while JavaScript is an imperative language.
                 </p>
-                <br>
+                
                 <q>“Javascript should only do what only javascript can do!”</q>
-                <br>
+                
                 <p>
                     Why do people do that?
                     (example: creating a button with js)
                     It is mostly about control
                 </p>
-                <br>
+                
                 <p>
-                    HTML - 
+                    HTML -
                     Declarative language
                 </p>
                 <p>
-                    CSS - 
+                    CSS -
                     Declarative language
                 </p>
                 <p>
-                    JavaScript - 
+                    JavaScript -
                     Imperative language
                 </p>
 
             </section>
 
         </main>
-        <footer>
-            <%- include('../partials/footer.ejs') %>
-        </footer>
-        <script src="/script.js"></script>
 
-</body>
-
-</html>
+        <%- include ('../partials/footer.ejs') %>

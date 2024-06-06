@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <%- include('../partials/head.ejs') %>
-</head>
-
-<body>
+<%- include('../partials/head.ejs') %>
 
     <%- include('../partials/header.ejs') %>
 
@@ -18,27 +11,35 @@
             <section id="blog">
 
                 <div class="blogHead">
-                    <img src="/assets/images/image.png" alt="goals">
+                    <img src="/assets/images/goals.png" alt="goals">
                     <h2>My goals</h2>
                 </div>
-                <br>
 
                 <ol>
-                    <li>I want to be more fluent when writing JavaScript</li>
-                    <br>
-                    <li>I would like to be able to express myself better when we work together and to communicate my
-                        thoughts more often</li>
-                    <br>
-                    <li>I want to be able to build a whole website on my own.</li>
+                    <li>
+                        <strong>Technische woordenschat ontwikkelen:</strong>
+                        Mijn vermogen verbeteren om precieze programmeerterminologie te gebruiken om efficiënt te zoeken
+                        en de specifieke coderingsbronnen en documentatie te vinden die ik nodig heb.
+                    </li>
+                    <li>
+                        <strong>Communicatievaardigheden verbeteren:</strong>
+                        De samenwerking met teamleden en belanghebbenden verbeteren door mijn vermogen om technische
+                        concepten en ideeën duidelijk te verwoorden, zowel schriftelijk als mondeling.
+                    </li>
+                    <li>
+                        <strong>JavaScript onder de knie krijgen:</strong>
+                        Vloeiend worden in JavaScript om schone en efficiënte code te schrijven met behulp van
+                        controlestructuren zoals forEach-lussen, if-statements en andere basisconstructies voor
+                        programmeren.
+                    </li>
+                    <li>
+                        <strong>Full Stack Web Development:</strong>
+                        De vaardigheden verwerven die nodig zijn om zelfstandig een complete website te bouwen.
+                    </li>
+
                 </ol>
             </section>
 
         </main>
-        <footer>
-            <%- include('../partials/footer.ejs') %>
-        </footer>
-        <script src="/script.js"></script>
 
-</body>
-
-</html>
+        <%- include ('../partials/footer.ejs') %>

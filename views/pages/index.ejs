@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <%- include('../partials/head.ejs') %>
-</head>
-
-<body>
+<%- include('../partials/head.ejs') %>
 
     <%- include('../partials/header.ejs') %>
 
@@ -17,7 +10,7 @@
 
             <h2>Weekly Nerd Blogs</h2>
             <section id="blogs">
-                <ul>
+                <ul id="blogList">
                     <li>
                         <a href="/kilian">
                             <h3>Kilian Valkhof</h3>
@@ -57,7 +50,7 @@
                         <a href="/hackathon">
                             <h3>Hackathon</h3>
                         </a>
-                        <img src="/assets/images/image.png" alt="hackathon">
+                        <img src="/assets/images/hackathon.png" alt="hackathon project image">
                         <p>short info</p>
                     </li>
                     <li>
@@ -65,14 +58,14 @@
                             <h3>Marieke de Hoop</h3>
                             <h3>Pim Teeuwisse</h3>
                         </a>
-                        <img src="/assets/images/image.png" alt="marieke">
+                        <img src="/assets/images/digital.png" alt="digitaal toegankelijk logo">
                         <p>short info</p>
                     </li>
                     <li>
                         <a href="/rosa">
                             <h3>Rosa Schuurman</h3>
                         </a>
-                        <img src="/assets/images/image.png" alt="rosa">
+                        <img src="/assets/images/rosa.png" alt="rosa">
                         <p>short info</p>
                     </li>
 
@@ -80,7 +73,7 @@
                         <a href="/goals">
                             <h3>My Goals</h3>
                         </a>
-                        <img src="/assets/images/image.png" alt="goals">
+                        <img src="/assets/images/goals.png" alt="goals">
                         <p>short info</p>
                     </li>
 
@@ -90,12 +83,6 @@
 
         </main>
 
-        <footer>
-            <%- include('../partials/footer.ejs') %>
-        </footer>
 
-        <script src="/script.js"></script>
 
-</body>
-
-</html>
+        <%- include ('../partials/footer.ejs') %>
