@@ -273,6 +273,7 @@
     }
 
     #blogs ul li {
+        width: 17rem;
         padding: 1rem;
         background-color: #b192d8;
         display: grid;
@@ -291,6 +292,8 @@
 
     #blogs ul li h3 {
         grid-area: 2/1;
+        align-self: stretch;
+        height: 3rem;
     }
 
     #blogs ul:has(img) li img {
@@ -301,6 +304,18 @@
         box-shadow:
             rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
             rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+    #blogs ul li p {
+        grid-row: 3;
+    }
+
+    #blogs ul li h3,
+    #blogs ul li p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     #blog li {
