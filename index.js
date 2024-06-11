@@ -56,6 +56,23 @@ app.get("/rosa", async (req, res) => {
     res.render("pages/rosa", { title: "rosa" });
 });
 
+app.get("/robert", async (req, res) => {
+    res.render("pages/robert", { title: "robert" });
+});
+app.get("/q42", async (req, res) => {
+    res.render("pages/q42", { title: "q42" });
+});
+app.get("/marit", async (req, res) => {
+    res.render("pages/marit", { title: "marit" });
+});
+app.get("/bramus", async (req, res) => {
+    res.render("pages/bramus", { title: "bramus" });
+});
+app.get("/miriam", async (req, res) => {
+    res.render("pages/miriam", { title: "miriam" });
+});
+
+
 app.get("/goals", async (req, res) => {
     res.render("pages/goals", { title: "goals" });
 });
