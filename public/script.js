@@ -20,5 +20,19 @@ listItems.forEach(function (li) {
 });
 
 
+// removing words from long paragraphs
+$(document).ready(function() {
+    $('#blogList li p').each(function() {
+        var lineHeight = parseInt($(this).css('line-height'));
+        var maxHeight = lineHeight * 3; 
+        var actualHeight = $(this).height();
+
+        if (actualHeight > maxHeight) {
+            var truncatedText = $(this).text().trim().substring(0, maxHeight / lineHeight - 1).trim();
+            $(this).text(truncatedText + '...');
+        }
+    });
+});
+
 
 
