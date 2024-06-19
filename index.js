@@ -72,6 +72,9 @@ app.get("/miriam", async (req, res) => {
     res.render("pages/miriam", { title: "miriam" });
 });
 
+app.get("/final-project", async (req, res) => {
+    res.render("pages/final-project", { title: "final project" });
+});
 
 app.get("/goals", async (req, res) => {
     res.render("pages/goals", { title: "goals" });

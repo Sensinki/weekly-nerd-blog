@@ -10,107 +10,173 @@
 
             <section id="blog">
 
-                <div class="blogHead">
+                <section class="blogHead">
                     <img src="/assets/images/fenna.png" alt="fenna">
-                    <h2>Accesible webistes</h2>
-                    
-                    <h3 class="bold">Speaker: Fenna de Wilde</h3>
-                </div>
-                
 
-                <p>
-                    Fenna is a former CMD student who has specialized in website accessibility. Fenna now works at
-                    Bakken & Bæck, an
-                    international design studio. She has contributed to the development of the Phantom Wallet website
-                    and is the lead
-                    developer there.
+                    <section class="info-blog">
+                        <h2 class="bold">Accesible webistes</h2>
+                        <h3 class="bold">Speaker:</h3>
+                        <h3>Fenna de Wilde</h3>
+                        <h3 class="bold">Date:</h3>
+                        <!-- new date -->
+                        <h3>14.03.2024</h3>
+                        <h3 class="bold">Reach to speaker:</h3>
+                        <section class="links">
+                            <a href="https://www.linkedin.com/in/fenna-de-wilde/?originalSubdomain=nl" target="_blank">
+                                <svg viewBox="0 0 512.69 513">
+                                    <use xlink:href="/assets/icons/icons.svg#linnkedin-icon"></use>
+                                </svg>
+                            </a>
+                            <a href="https://read.cv/fennadewilde" target="_blank">
+                                <svg viewBox="0 0 512.69 513">
+                                    <use xlink:href="/assets/icons/icons.svg#world-icon"></use>
+                                </svg>
+                            </a>
+                        </section>
+                    </section>
+                </section>
 
-                </p>
-                
-                <p>
-                    Fenna mainly focused on accessibility and making websites more accessible. She also talked about her
-                    work at Bakken &
-                    Bæck and the technologies she uses. In the business world, very few people are interested in
-                    accessibility. This
-                    surprises and sometimes annoys Fenna. When she receives a design from a designer for a website at
-                    her job, the
-                    accessibility part is often missing. Fenna will not start a project if the accessibility part is not
-                    perfectly included.
-                </p>
-                
-                <p>
-                    Fenna uses the following technologies:
-                </p>
-                <ul>
-                    <li>Language: Next.js + TypeScript</li>
-                    <li>Deployment: Vercel</li>
-                    <li>CMS: Sanity</li>
-                </ul>
-                
+                <section class="blog-content">
 
-                <h3 class="bold">Aria attributes</h3>
-                
-                <p>
-                    Giving an element a label using the aria-label is important, especially for people that use screen
-                    readers due to
-                    disabilities. These users need to understand the functions of website elements like icon buttons and
-                    image-only links
-                    that only have visual hints to help the user understand their functions.
-                </p>
-                
-                <p>
-                    <code>aria-control</code> links elements to other elements that they control, such as buttons and
-                    links.
-                </p>
-                
-                <p>
-                    <code>Aria-live</code> attribute helps the screen readers understand when something on a webpage
-                    changes without
-                    reloading the page.
-                    You can set it to off, polite or assertive. Polite makes it so that the changes get announced after
-                    the user’s current
-                    task, assertive interrupts the user’s tasks.
-                </p>
 
-                <h3 class="bold">General accessibility rules</h3>
-                
-                <ul>
-                    <li>
-                        Text must have a contrast ratio of 4.5:1 according to WCAG.
-                    </li>
-                    <li>
-                        Large text, 24px or 18px bold, and icons should have a contrast ratio of 3:1. Except for
-                        logos
-                        and decorative elements.
-                    </li>
-                    <li>
-                        For optimal readability, a line length of 50 to 75 characters including spaces is recommended.
-                    </li>
-                    <p>The reason is:</p>
+                    <p>
+                        Fenna is a former CMD student who has specialized in website accessibility. Fenna now works at
+                        Bakken & Bæck, an
+                        international design studio. She has contributed to the development of the Phantom Wallet
+                        website
+                        and is the lead
+                        developer there.
+
+                    </p>
+
+                    <p>
+                        Fenna mainly focused on accessibility and making websites more accessible. She also talked about
+                        her
+                        work at Bakken &
+                        Bæck and the technologies she uses. In the business world, very few people are interested in
+                        accessibility. This
+                        surprises and sometimes annoys Fenna. When she receives a design from a designer for a website
+                        at
+                        her job, the
+                        accessibility part is often missing. Fenna will not start a project if the accessibility part is
+                        not
+                        perfectly included.
+                    </p>
+
+                    <p>
+                        Fenna uses the following technologies:
+                    </p>
+                    <ul>
+                        <li>Language: Next.js + TypeScript</li>
+                        <li>Deployment: Vercel</li>
+                        <li>CMS: Sanity</li>
+                    </ul>
+
+
+                    <h3 class="bold">Aria attributes</h3>
+
+                    <p>
+                        Giving an element a label using the aria-label is important, especially for people that use
+                        screen
+                        readers due to
+                        disabilities. These users need to understand the functions of website elements like icon buttons
+                        and
+                        image-only links
+                        that only have visual hints to help the user understand their functions.
+                    </p>
+
+                    <p>
+                        <code>aria-control</code> links elements to other elements that they control, such as buttons
+                        and
+                        links.
+                    </p>
+
+                    <p>
+                        <code>Aria-live</code> attribute helps the screen readers understand when something on a webpage
+                        changes without
+                        reloading the page.
+                        You can set it to off, polite or assertive. Polite makes it so that the changes get announced
+                        after
+                        the user’s current
+                        task, assertive interrupts the user’s tasks.
+                    </p>
+
+                    <h3 class="bold">General accessibility rules</h3>
+
                     <ul>
                         <li>
-                            Readers should not lose interest.
+                            Text must have a contrast ratio of 4.5:1 according to WCAG.
                         </li>
                         <li>
-                            Adjust text for different screen sizes (on large screens, make lines less wide).
+                            Large text, 24px or 18px bold, and icons should have a contrast ratio of 3:1. Except for
+                            logos
+                            and decorative elements.
+                        </li>
+                        <li>
+                            For optimal readability, a line length of 50 to 75 characters including spaces is
+                            recommended.
+                        </li>
+                        <p>The reason is:</p>
+                        <ul>
+                            <li>
+                                Readers should not lose interest.
+                            </li>
+                            <li>
+                                Adjust text for different screen sizes (on large screens, make lines less wide).
+                            </li>
+                        </ul>
+                    </ul>
+
+
+
+                    <p>
+                        I learned many new things from what Fenna told us, however I don’t know how much of it I will be
+                        using in the future.
+                        That’s because the more proper my code is, the less aria attributes I will need to be using. I’d
+                        like to improve the
+                        basics of my coding and my understanding of accessibility in order to avoid resorting to extra
+                        features. I still really
+                        liked listening to her experiences and it is extremely valuable to know these functions and be
+                        able
+                        to use them in case
+                        they’re needed.
+
+                    </p>
+
+                </section>
+                <section class="recommended-blogs">
+                    <h3>Recommended Blogs</h3>
+                    <ul class="recommended-list">
+                        <li>
+                            <a href="/kilian">
+                                <h3>Kilian Valkhof</h3>
+                                <h4>Polypane</h4>
+                            </a>
+                            <img src="/assets/images/kilian.png" alt="Photo of Kilian Valkhof">
+                        </li>
+                        <li>
+                            <a href="/jeremy">
+                                <h3>Jeremy Keith</h3>
+                                <h4>Declarative Design</h4>
+                            </a>
+                            <img src="/assets/images/jeremy.png" alt="Photo of Jeremy Keith">
+                        </li>
+                        <li>
+                            <a href="/robert">
+                                <h3>Robert Spier</h3>
+                                <h4>Who are we?</h4>
+                            </a>
+                            <img src="/assets/images/robert.jpeg" alt="Photo of Robert Spier">
+                        </li>
+                        <li>
+                            <a href="/nils">
+                                <h3>Nils Binder</h3>
+                                <h4>9elements</h4>
+                            </a>
+                            <img src="/assets/images/nils.png" alt="Photo of Nils Binder">
                         </li>
                     </ul>
-                </ul>
-
-
-                
-                <p>
-                    I learned many new things from what Fenna told us, however I don’t know how much of it I will be
-                    using in the future.
-                    That’s because the more proper my code is, the less aria attributes I will need to be using. I’d
-                    like to improve the
-                    basics of my coding and my understanding of accessibility in order to avoid resorting to extra
-                    features. I still really
-                    liked listening to her experiences and it is extremely valuable to know these functions and be able
-                    to use them in case
-                    they’re needed.
-
-                </p>
+                </section>
 
             </section>
 
