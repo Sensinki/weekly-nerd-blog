@@ -36,7 +36,6 @@
     --aboutme-h2-color: #f8e4cfcd;
     --aboutme-p-color: black;
 
-
     --header-backup-color: #ad4f55b7;
     --body-backup-background: #f7e6ed;
     --blogs-backup-color: #b56565;
@@ -515,7 +514,18 @@
                     justify-self: center;
                     align-self: center;
                     text-align: center;
-                    color: var(--white);
+                    color: var(--component-h3-color);
+                }
+            }
+
+            .topic-explain {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                color: var(--component-h3-color);
+
+                & p {
+                    max-width: 35rem;
                 }
             }
         }
@@ -620,8 +630,6 @@
             & p {
                 color: var(--aboutme-p-color);
             }
-
-
         }
     }
 
@@ -667,7 +675,7 @@
         position: sticky;
         top: 9rem;
         width: 5px;
-        height: 70vh;
+        height: 75vh;
         margin-top: 0;
         align-self: top;
     }
@@ -773,7 +781,11 @@
         grid-template-rows: 30rem 1fr;
 
         & .blogHead {
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 3fr 1fr;
+
+            /* flex-direction: row; */
             grid-area: 1 / 1 / 2 / 4;
             width: 80vw;
             max-width: 60rem;
@@ -782,6 +794,12 @@
                 width: 80%;
                 height: 30vh;
                 max-width: 20rem;
+                justify-self: center;
+            }
+
+            & .topic-explain {
+                grid-area: 2 / 1 / 3 / 3;
+                display: flex;
             }
         }
 
