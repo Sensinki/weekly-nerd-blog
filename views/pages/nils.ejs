@@ -42,14 +42,162 @@
                     </section>
                     <section class="topic-explain">
                         <p>
-                                Nils, a front-end designer at 9elements, specializes in web development and
-                                communication design, promoting use of design units like px, %, and rem.
+                            Nils, a front-end designer at 9elements, specializes in web development and
+                            communication design, promoting use of design units like px, %, and rem.
                         </p>
                     </section>
                 </section>
 
 
                 <section class="blog-content">
+
+                    <p>
+                        Nils Binder is a front-end designer at 9elements, where he works on communication design, visual
+                        design, and web
+                        development. He is an expert in creating functional but good looking websites. Nils asked "Why
+                        do all websites look the
+                        same?" and explored the role of standardization in design and the opportunities for change and
+                        innovation.
+                    </p>
+
+                    <p>
+                        He works at the company 9elements. 9elements focuses on web development, visual design and
+                        communication.
+                    </p>
+
+                    <h3>Wrapper element</h3>
+                    <p>The use of a wrapper element in web design includes:</p>
+                    <ul>
+                        <li>Padding: Provides white space within the element</li>
+                        <li>Centers the content: Helps keep the content centered for better readability and aesthetics
+                        </li>
+                        <li>Max-width: Sets a maximum width for the content</li>
+                    </ul>
+
+                    <p>
+                        The old way to place a wrapper is:
+                    </p>
+                    <pre>
+    <code>
+    .wrapper {
+        max-width: 75rem;
+        margin: 0 auto;
+        padding: 0 1.5rem:
+    }
+    </code>
+</pre>
+                    <p>
+                        This is a better way to place a wrapper:
+                    </p>
+                    <pre>
+    <code>
+    .wrapper {
+        width: min(100% - 3em, 75rem);
+        margin-inline: auto;
+    }
+
+    </code>
+</pre>
+                    <p>
+                        This is also a good method but it is not readable anymore, so Nils recommends not to use this
+                        one:
+                    </p>
+                    <pre>
+    <code>
+    .wrapper {
+        margin-inlnine: max(1.5rem,((100% - var(--wrapper-max, 75rem)) / 2 ))
+    }
+    </code>
+</pre>
+                    <h3>Design units</h3>
+                    <p>
+                        Nils talked about units that we can use while designing. It is important to make good use of
+                        units to ensure precision
+                        and uniformity while making a website.
+                    </p>
+                    <p>
+                        Figma units:
+                    </p>
+                    <ul>
+                        <li>px,</li>
+                        <li>%,</li>
+                        <li>rem</li>
+                    </ul>
+
+                    <p>
+                        Units in CSS:
+                    </p>
+                    <ul>
+                        <li>px,</li>
+                        <li>%,</li>
+                        <li>rem,</li>
+                        <li>ch,</li>
+                        <li>ex,</li>
+                        <li>em,</li>
+                        <li>vw,</li>
+                        <li>vh,</li>
+                        <li>vmin,</li>
+                        <li>vmax,</li>
+                        <li>etc.</li>
+                    </ul>
+
+                    <p>
+                        Figma mainly uses pixels, percentages, and rem (root em) units for design. It is similar to CSS.
+                        Designers can also
+                        customize text line-height in Figma, which, like CSS, doesn’t use units.
+                    </p>
+
+                    <p>
+                        CSS uses more unit options than Figma, including:
+                    </p>
+
+                    <ul>
+                        <li>Pixels (px)</li>
+                        <li>Percentages (%)</li>
+                        <li>Rem (root em)</li>
+                        <li>Ch (character width)</li>
+                        <li>Ex (x-height)</li>
+                        <li>Em (element's font size)</li>
+                    </ul>
+
+                    <p>
+                        The last four are relative units that adjust based on context. CSS also has viewport units like:
+                    </p>
+
+                    <ul>
+                        <li>Vw (viewport width)</li>
+                        <li>Vh (viewport height)</li>
+                        <li>Vmin (minimum of viewport’s height and width)</li>
+                        <li>Vmax (maximum of viewport’s height and width)</li>
+                    </ul>
+
+                    <p>
+                        These viewport units help create layouts that adjust to different screen sizes.
+                    </p>
+
+                    <p>
+                        CSS also has container units, which are relative to their container element, like:
+                    </p>
+
+                    <ul>
+                        <li>Qh (1% of container’s height)</li>
+                        <li>Qw (1% of container’s width)</li>
+                        <li>Qi (1% of container’s inline size)</li>
+                        <li>Qb (1% of container’s block size)</li>
+                        <li>Qmin (smaller of qi or qb)</li>
+                        <li>Qmax (larger of qi or qb)</li>
+                    </ul>
+
+                    <p>
+                        There are also units like min-content, max-content, and fit-content that adapt to the content
+                        they hold.
+                    </p>
+
+                    <p>
+                        Understanding these units helps us designers and developers create flexible and responsive
+                        designs for different devices
+                        and screen sizes.
+                    </p>
 
                 </section>
 
