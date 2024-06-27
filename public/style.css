@@ -540,6 +540,12 @@
             max-width: 30rem;
         }
 
+        & .blog-content:has(a) a {
+            background-color: var(--aboutme-backup-color);
+            padding: 0.1rem 0.3rem;
+            border-radius: 0.5rem;
+        }
+
         & .recommended-blogs {
             justify-self: center;
             align-self: flex-start;
