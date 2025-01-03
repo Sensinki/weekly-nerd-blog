@@ -1,8 +1,8 @@
 
 # Process Report 📰
 
-## My idea 🍀
-My idea is to create a Netflix-like application. For this I will work with TheMovieDB's API. I want to learn more about fetching data and working more with data. I want to make it possible for the user to see what movies are popular, view the details of any movie and search for specific movies. I also want to make it possible to search for movies with voice recognition, using the Google Web Speech API for the search feature. 
+This is where I log my weekly discoveries from the world of web design and development. Join me as I share insights from inspiring speakers and my own journey in this exciting field.
+
 
 ## What did I use to create this project 🚸
 - NodeJS
@@ -22,10 +22,10 @@ That helps you to place this project in your computer so you can easily navigate
 You can clone the application from CLI or install it by downloading the ZIP file. To clone, you can paste the following code into the CLI you are using:
 
 * HTTPS
-`git clone https://github.com/Sensinki/API.git`
+`git clone https://github.com/Sensinki/weekly-nerd-blog.git`
 
 * or SSH
-`git clone git@github.com:Sensinki/API.git`
+`git clone git@github.com:Sensinki/weekly-nerd-blog.git`
 
 ### 3. Install dependencies
 Now you have all documents but you can not run the code without dependencies. I used npm, you can install npm by copying the following code to the CLI.
@@ -37,15 +37,13 @@ You can check my "package.json" file if you want to see all of my dependensies a
 ### 4. .env file 
 As last final step, you should set your .env file for MongoDB connection. In the .env file you will define following informations:
 
-`TMDB_API_KEY=04625eb1806d881fb98867452db70e10`
-`PORT=2222`
+`PORT=5555`
+It doesn't matter which port you choose. It's up to you :)
 
 ### 5. Run the project
 Now you can run the project. Write your terminal `npm run dev`. 
 
-To check the connection you can go to your browser and write "localhost:2222" or "localhost:3333". If there is no problem, you should see the homepage of the MovyMovie app.
+To check the connection you can go to your browser and write "localhost:5555". If there is no problem, you should see the homepage of the app.
 You can also check the connection by looking at the console. If it is working you should see something like:
 
-`WeeklyNerd app listening on port 3333`
-
-
+`WeeklyNerd app listening on port 5555`
